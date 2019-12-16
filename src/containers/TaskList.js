@@ -78,7 +78,6 @@ class TaskList extends Component {
             editing: true,
             comments: []
         })
-        //.then(console.log('PROMISE'));
     }
     handleCompletedTask = task => {
         this.props.completeTask(task);
@@ -93,7 +92,7 @@ class TaskList extends Component {
 
     render(){
         return (
-            <div className="col-xs col-md-6 offset-md-3 position-static">
+            <div className={"col-xs col-md-6 position-static " + (this.props.activeTask ? '' : 'offset-md-3')}>
                 { this.props.tasks.length ?
                     <div>
                         <div className="task-list">
@@ -129,6 +128,7 @@ class TaskList extends Component {
 const mapStateToProps = state => {
     return {
         tasks: state.tasks,
+        activeTask: state.activeTask,
     };
 };
 

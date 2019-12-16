@@ -5,8 +5,8 @@ export default (state = null, action) => {
 
         case 'TASK_UNSELECTED':
             return action.payload;
-        default:
-    }
 
-    return state;
+        default:
+            return state;
+    }
 }

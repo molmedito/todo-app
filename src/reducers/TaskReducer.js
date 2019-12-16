@@ -8,14 +8,18 @@ export default () => {
             editing: false,
             comments: [
                 {
+                    id: 0,
                     user: 'Rosita Espinoza',
                     comment: 'Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
                     date: 'Jue 23 ene 2020',
+                    commenting: false,
                 },
                 {
+                    id: 1,
                     user: 'Rosita Espinoza',
                     comment: 'Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
                     date: 'Jue 23 ene 2020',
+                    commenting: false,
                 },
             ]
         },
@@ -27,9 +31,11 @@ export default () => {
             editing: false,
             comments: [
                 {
+                    id: 0,
                     user: 'Rosita Espinoza',
                     comment: 'Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
                     date: 'Jue 23 ene 2020',
+                    commenting: false,
                 },
             ]
         },

@@ -40,3 +40,28 @@ export const deleteTask = (id) => {
         id: id,
     }
 }
+
+export const addCommentToTask = (task) => {
+    return {
+        type: 'ADD_COMMENT_TO_TASK',
+        payload: task,
+    }
+}
+
+export const editCommentToTask = (i, comment) => {
+    return {
+        type:  'EDIT_COMMENT_TO_TASK',
+        i: i,
+        id: comment.id,
+        payload: comment
+    }
+}
+
+
+export const deleteCommentToTask = (i, id) => {
+    return {
+        type: 'DELETE_COMMENT_TO_TASK',
+        i: i,
+        id: id,
+    }
+}

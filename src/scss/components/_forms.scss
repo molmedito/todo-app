@@ -1,6 +1,6 @@
 .input-checkbox {
     position: relative;
-    
+
     &:before {
         content: '';
         display: block;
@@ -27,4 +27,11 @@
     input[type=checkbox] {
         display: none;
     }
+}
+
+.input-textarea {
+    padding: 6px;
+    height: 60px;
+    box-sizing: border-box;
+    width: 100%;
 }

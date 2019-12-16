@@ -86,6 +86,14 @@
     box-sizing: border-box;
     border-radius: 30px 30px 0 0;
 
+    @media (min-width: 992px) {
+        width: 50%;
+        height: 100vh;
+        left: initial;
+        right: 0;
+        border-radius: 30px 0 0 30px;
+    }
+
     .task-detail__description,
     .task-detail__comment-list {
         margin-top: 20px;
@@ -101,10 +109,26 @@
         margin-top: 20px;
 
         .task-detail__comment__detail-img {
+            width: 32px;
             margin-right: 16px;
+
+            img {
+                width: 100%;
+            }
         }
         .task-detail__comment__detail-info {
             width: 100%;
+
+            &.task-detail__comment__detail-info--new {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            }
+
+            .input-textarea,
+            .btn {
+                margin-top: 10px;
+            }
 
             .task-detail__comment__detail-username {
                 width: 100%;
@@ -119,6 +143,10 @@
                     span {
                         margin-left: 6px;
                         cursor: pointer;
+
+                        img {
+                            height: 12px;
+                        }
                     }
                 }
             }
@@ -130,6 +158,12 @@
                 font-size: 12px;
             }
         }
+    }
+
+    .link {
+        display: block;
+        margin-top: 30px;
+        margin-left: 48px;
     }
 }
 

@@ -1,7 +1,14 @@
 .btn {
+    color: $white;
+    font-weight: 600;
     background-color: $blue;
     border-radius: 0;
     transition: 0.3s all ease;
+
+    &:hover {
+        color: $white;
+        background-color: darken($blue, 10);
+    }
 
     &.btn-circle {
         width: 60px;
