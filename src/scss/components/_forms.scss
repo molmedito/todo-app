@@ -1,0 +1,30 @@
+.input-checkbox {
+    position: relative;
+    
+    &:before {
+        content: '';
+        display: block;
+        width: 19px;
+        height: 19px;
+        border: 1px solid $grey-border;
+        background-color: $white;
+    }
+    &.checked:before {
+        background-color: $mid-grey;
+    }
+    &.checked:after {
+        content: '';
+        display: block;
+        width: 19px;
+        height: 19px;
+        background-image: url('/assets/icons/icon-check-1@2x.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px 11px;
+        position: absolute;
+        top: 0;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+}

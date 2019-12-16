@@ -1,9 +1,12 @@
-import {combineReducers} from 'redux';
-import TaskReducer from './TaskReducer';
+import { combineReducers } from 'redux';
+
+// Reducers
+// /import TaskReducer from './TaskReducer';
+import AddTaskReducer from './AddTaskReducer';
 import ActiveTaskReducer from './ActiveTaskReducer';
 
 const allReducers = combineReducers({
-    tasks: TaskReducer,
+    tasks: AddTaskReducer,
     activeTask: ActiveTaskReducer,
 });
 

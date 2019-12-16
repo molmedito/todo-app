@@ -1,0 +1,26 @@
+.btn {
+    background-color: $blue;
+    border-radius: 0;
+    transition: 0.3s all ease;
+
+    &.btn-circle {
+        width: 60px;
+        height: 60px;
+        outline: none;
+        border-radius: 100%;
+        box-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+
+        &:focus,
+        &:active {
+            box-shadow: none;
+        }
+
+        &:hover {
+            transform: scale(1.15);
+        }
+
+        img {
+            height: 30px;
+        }
+    }
+}

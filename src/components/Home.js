@@ -7,9 +7,13 @@ import TaskDetail from './../containers/TaskDetail';
 
 const Home = () => {
     return (
-        <div>
-            <TaskList />
-            <TaskDetail />
+        <div className="home">
+            <div className="container">
+                <div className="row">
+                    <TaskList />
+                    <TaskDetail />
+                </div>
+            </div>
         </div>
     )
 }
